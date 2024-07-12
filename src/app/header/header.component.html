@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" fxHide.lt-md>
+  </button>
+  <span fxFlex fxHide.gt-xs>🏸</span>
+  <span class="example-spacer"></span>
+  
+ <!-- My Three poins Button -->
+ <button mat-icon-button color="accent" [matMenuTriggerFor]="menu">   
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item  (click)="scrollTo('home')" fxHide.lt-md>Home</button>
+  <button mat-menu-item  (click)="scrollTo('Projects')" fxHide.lt-md>Projects</button>
+  <button mat-menu-item  (click)="scrollTo('Hire-Me')" fxHide.lt-md>Hire Me</button>
+  <button mat-menu-item  (click)="scrollTo('more-about')" fxHide.lt-md>More About Me</button>
+</mat-menu>
+</mat-toolbar>
+
+
+

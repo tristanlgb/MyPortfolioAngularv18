@@ -1,0 +1,33 @@
+.more-about {
+  padding: 6rem 0;;
+  background-color: #fff;
+  .container {
+    .project-content {
+      .section-heading {
+        h3 {
+          font-weight: 700;
+          color: rgba(61, 0, 243, 0.692);
+        }
+        h4 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .more-about {
+    .container {
+      .project-content {
+        .section-heading {
+          h3 {
+            justify-content: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
